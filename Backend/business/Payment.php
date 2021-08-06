@@ -43,7 +43,7 @@ class Payment{
     public function Save(){
         $link = new PDO("mysql:host=".$this->ServerDB.";dbname=".$this->DataBaseDB, $this->UserDB, $this->PassDB);
   
-        $statement = $link->prepare("INSERT INTO pagos (total,date_created,description,name,number_card,email,order_id)
+        $statement = $link->prepare("INSERT INTO pago (total,date_created,description,name,number_card,email,order_id)
             VALUES (:total, now(), :description,:name,:number_card,:email,:order_id)");
   
         $statement->execute([

@@ -49,6 +49,7 @@ if($email != false && $password != false){
 		<nav>
 			<ul class="menu2">
 				<li><a href="inicio.php">Inicio</a></li>
+				<li><a href="evento.php">Reservar</a></li>
 				<li><a href="catalogo.php">Catalogo</a></li>
 				<li><a href="inicio.php#services">Ofertas</a></li>
 				<li><a href="galeria.php">Galeria</a></li>

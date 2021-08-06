@@ -31,7 +31,7 @@ if(isset($_POST['signup'])){
             $message = "Bienvenido, gracias por registrarse en nuestra plataforma NextBooking.
             
 Su código de verificación es $code";
-            $sender = "From: cristian100.mh@gmail.com";
+            $sender = "From: jonathanchavez3245@gmail.com";
             if(mail($email, $subject, $message, $sender)){
                 $info = "Hemos enviado un código de verificación a su correo electrónico $email";
                 $_SESSION['info'] = $info;
@@ -116,7 +116,7 @@ Su código de verificación es $code";
             if($run_query){
                 $subject = "Código de restablecimiento de contraseña";
                 $message = "Su código de restablecimiento de contraseña es $code";
-                $sender = "From: cristian100.mh@gmail.com";
+                $sender = "From: jonathanchavez3245@gmail.com";
                 if(mail($email, $subject, $message, $sender)){
                     $info = "Hemos enviado un código de verificación $email";
                     $_SESSION['info'] = $info;
