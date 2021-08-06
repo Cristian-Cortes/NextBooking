@@ -1,0 +1,116 @@
+<!--
+    Nombre del sistema: NextBooking
+    Desarrollado por: NextBooking Team
+    Copyrigth todos los reservados por NextBooking Company prohíben la copia o la duplicación de estos fragmentos de código utilizados para el desarrollo del sistema.
+-->
+
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextBooking | Bienvenido</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+</head>
+<body>
+    <header class="bg_animate">
+        <div class="header_nav">
+            <div class="contenedor">
+                <h1>NextBooking</h1>
+                <nav>
+                    <a href="#ubicacion">Ubicacion </a>
+                    <a href="#contact">Contactanos</a>
+                </nav>
+            </div>
+        </div>
+
+        <section class="banner contenedor">
+            <secrion class="banner_title">
+                <h2>Hotel Sol y Luna</h2>
+                <h3>¿Necesitas hospedaje?</h3>
+                <p class="eslogan">Siempre ahí un espacio perfecto para tí</p>
+                <a href="Log_Ins.php" class="llamanos">Empezar</a>
+            </secrion>
+            <div class="banner_img">
+                <img src="img/Fondo.png" alt="">
+            </div>
+        </section>
+
+        <div class="burbujas">
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+        </div>
+    </header>
+    <!--Inicio aparatado de ubicacion-->
+    <div class="agileits-services" id="ubicacion">
+        <div class="container">
+           <h2 class="heading text-capitalize"> Nos ubicamos </h2>
+           <p class="subs mt-4">Luis Chávez Orozco, No. 12, Col, El Nith, Ixmiquilpan Hidalgo.</p>
+            <div class="agileits-services-row row pt-md-5 pb-5  text-center">
+                <div id="map"></div> 
+            </div>
+            <p class="subs mb-4">Servicios adaptables a tus necesidades, te esperamos</p>
+            <a href="https://goo.gl/maps/vpkrCF5NXWrgmUgU6" class="banner-button btn">Como llegar</a>
+        </div>
+    </div>
+
+<!--Inicio aparatado de contacto-->
+     <section class="wedo" id="contact">
+        <div class="container">
+            <h3 class="heading text-capitalize text-white text-center"> Contactanos </h3>
+           <p class="subs mt-4 text-center">Sus comentarios atribuyen a nuestro crecimiento.</p>
+            <div class="contact_grid_right mt-5 mx-auto text-center">
+                <form action="#" method="post">
+                    <div class="row contact_top">
+                        <div class="col-sm-6">
+                            <input type="text" name="Name" placeholder="Nombre" required="">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="email" name="Email" placeholder="Email" required="">
+                        </div>
+                    </div>  
+                        <input type="text" name="Name" placeholder="Nombre" required="">
+                        <textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Mensage...</textarea>
+                        <input type="submit" value="Enviar Mensage">
+                        <input type="reset" value="Borrar Formato">
+                        <div class="clearfix"> </div>
+                </form>
+            </div>
+            <div class="cpy-right text-center">
+            <div class="follow">
+                <ul class="social_section_1info">
+                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fa fa-google"></span></a></li>
+                    <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                    
+                    <li><a href="#"><span class="fa fa-vimeo"></span></a></li>
+                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                </ul>
+            </div>
+                <p>© 2021 Exclusivo. Derechos reservados | Diseñado por <span>NextBooking</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <script src="js/Map_Ubicacion.js"></script>
+    <!--API KEY-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script> 
+</body>
+</html>
